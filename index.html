@@ -611,7 +611,7 @@
     const btn = document.getElementById('btnSubmit');
     btn.disabled = true;
     btn.textContent = "Encoding files and recording entry...";
-    showMessage("Encoding documents and uploading to Google Drive...", "normal");
+    showMessage("Encoding documents and uploading...", "normal");
 
     try {
       const [doc1Data, doc2Data, doc3Data] = await Promise.all([
