@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Water Treatment System Maintenance Suite - HDU SGH</title>
+  <title>Water Treatment System Maintenance - HDU SGH</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -292,7 +292,7 @@
     <div class="notice-box">
       <ul>
         <li><b>Work Order Verification:</b> All maintenance works must be accompanied by a signed and certified <b>Work Order (PDF)</b>. Uploading Work Order 1 is mandatory.</li>
-        <li><b>Pre/Post Operational Sanity:</b> Ensure RO plant pressure, flow rates, and tank levels are verified and normalized before clearing the system back into clinical haemodialysis operation.</li>
+        <li><b>Pre/Post Operational Sanity:</b> Ensure RO System pressure, flow rates, and tank levels are verified and normalized before clearing the system back into clinical haemodialysis operation.</li>
       </ul>
     </div>
 
@@ -303,7 +303,7 @@
 <div class="container">
   <div class="header">
     <img src="https://lh3.googleusercontent.com/d/1tCDAMimy_b0x9kRmWNyYMn4voR9Ynr0J" alt="Logo">
-    <h1>WATER TREATMENT SYSTEM MAINTENANCE SUITE</h1>
+    <h1>WATER TREATMENT SYSTEM MAINTENANCE</h1>
     <h2>Haemodialysis Unit, Sarawak General Hospital</h2>
   </div>
 
@@ -384,7 +384,7 @@
       <h3>MAINTENANCE ACTIVITY DETAILS</h3>
 
       <div class="item-card">
-        <div class="item-card-header">Subtopic 1: Service Classification</div>
+        <div class="item-card-header">Service Classification</div>
         <div class="grid-2">
           <div>
             <label for="maintType"><span class="field-title">Type of Maintenance</span></label>
@@ -406,7 +406,7 @@
       </div>
 
       <div class="item-card">
-        <div class="item-card-header">Subtopic 2: Task Execution & Schedule</div>
+        <div class="item-card-header">Task Execution & Schedule</div>
         <div class="grid-3">
           <div>
             <label for="taskNo"><span class="field-title">Task No.</span></label>
@@ -434,7 +434,7 @@
 
       <h3>SUPPORTING DOCUMENTATION UPLOAD (PDF)</h3>
       <div class="item-card">
-        <div class="item-card-header">Subtopic 3: Work Order & Verification Files</div>
+        <div class="item-card-header">Work Order & Verification Files</div>
 
         <!-- Document 1: Mandatory Work Order -->
         <div>
@@ -562,9 +562,9 @@
     const yyyy = now.getFullYear();
     const mm = String(now.getMonth() + 1).padStart(2, '0');
 
-    document.getElementById('tagDoc1').textContent = `Target: ${ro}-${yyyy}-${mm}-${type}-01.pdf (Mandatory)`;
-    document.getElementById('tagDoc2').textContent = `Target: ${ro}-${yyyy}-${mm}-${type}-02.pdf (Optional)`;
-    document.getElementById('tagDoc3').textContent = `Target: ${ro}-${yyyy}-${mm}-${type}-03.pdf (Optional)`;
+    document.getElementById('tagDoc1').textContent = `Mandatory`;
+    document.getElementById('tagDoc2').textContent = `Optional`;
+    document.getElementById('tagDoc3').textContent = `Optional`;
   }
 
   function readFileAsBase64(file) {
